@@ -1,0 +1,17 @@
+p1=1=/app/dubbo/NvhlPcisEdrSubmitToUnderWriting_B/logs/NvhlPcisEdrSubmitToUnderWriting.log=UncarCore-SubmitToUnderWriting-001=反欺诈不通过
+p1=1=/app/dubbo/NvhlPcisEdrSubmitToUnderWriting_B/logs/NvhlPcisEdrSubmitToUnderWriting.log=UncarCore-SubmitToUnderWriting-002=调用ilog产生异常
+p1=1=/app/dubbo/NvhlPcisEdrSubmitToUnderWriting_B/logs/NvhlPcisEdrSubmitToUnderWriting.log=UncarCore-SubmitToUnderWriting-003=调用天眼异常
+p1=1=/app/dubbo/NvhlPcisEdrSubmitToUnderWriting_B/logs/NvhlPcisEdrSubmitToUnderWriting.log=UncarCore-SubmitToUnderWriting-004=调用累计风险保额备选方案异常
+p1=1=/app/dubbo/NvhlPcisEdrSubmitToUnderWriting_B/logs/NvhlPcisEdrSubmitToUnderWriting.log=UncarCore-EdrSubmitToUnderWriting-001=反欺诈不通过
+p1=1=/app/dubbo/NvhlPcisEdrSubmitToUnderWriting_B/logs/NvhlPcisEdrSubmitToUnderWriting.log=UncarCore-EdrSubmitToUnderWriting-002=调用ilog产生异常
+p1=1=/app/dubbo/NvhlPcisEdrSubmitToUnderWriting_B/logs/NvhlPcisEdrSubmitToUnderWriting.log=UncarCore-EdrSubmitToUnderWriting-003=退保保存保单失败
+p1=1=/app/dubbo/NvhlPcisEdrSaveAppPolicy_B/logs/NvhlPcisEdrSaveAppPolicy.log=UncarCore-SaveAppPolicy-001=投保单保存失败
+p1=1=/app/dubbo/NvhlPcisEdrUnderWriting/logs/NvhlPcisEdrUnderWriting.log=UncarCore-EdrUnderWriting-001=调用再保系统产生异常
+p1=5=/app/dubbo/NvhlPcisEdrSaveAppPolicy_B/logs/stdout.log=Error=NvhlPcisEdrSaveAppPolicy系统错误
+p1=5=/app/dubbo/NvhlPcisEdrSaveAppPolicy_B/logs/stdout.log=Exception=NvhlPcisEdrSaveAppPolicy系统错误
+p1=5=/app/dubbo/NvhlPcisEdrSubmitToUnderWriting_B/logs/stdout.log=Error=NvhlPcisEdrSubmitToUnderWriting系统错误
+p1=5=/app/dubbo/NvhlPcisEdrSubmitToUnderWriting_B/logs/stdout.log=Exception=NvhlPcisEdrSubmitToUnderWriting系统错误
+p1=5=/app/dubbo/NvhlPcisEdrSubmitToUnderWriting_B/logs/stdout.log=Exception=NvhlPcisEdrSubmitToUnderWriting系统错误
+p1=5=/app/dubbo/NvhlPcisEdrSubmitToUnderWriting_B/logs/stdout.log=Exception=NvhlPcisEdrSubmitToUnderWriting系统错误
+p1=5=/app/dubbo/NvhlPcisEdrUnderWriting_B/logs/stdout.log=Exception=NvhlPcisEdrUnderWriting系统错误
+p1=5=/app/dubbo/NvhlPcisEdrUnderWriting_B/logs/stdout.log=Exception=NvhlPcisEdrUnderWriting系统错误
