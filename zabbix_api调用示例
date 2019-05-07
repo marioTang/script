@@ -1,0 +1,83 @@
+import sys
+import json
+import argparse
+import sys
+import datetime
+import time
+from collections import Counter
+import requests
+
+
+class zabbix_tools:
+
+    def __init__(self):
+        self.url = "http://zabbix.95303.com/api_jsonrpc.php"
+        self.header = {"Content-Type": "application/json"}
+        self.authID = self.user_login()
+
+    def user_login(self):
+        data=json.dumps(
+                {
+                    "jsonrpc": "2.0",
+                    "method": "user.login",
+                    "params": {
+                        "user": "xxxx",
+                        "password": "xxxx"
+                        },
+                    "id": 0
+                    })
+        output = requests.post(self.url, data, headers=self.header).text
+        if output:
+            output = json.loads(output)
+            print(output)
+            message = output['result']
+            return message
+
+    def delete_items(self, itemids):
+            data = json.dumps(
+                {
+                    "jsonrpc": "2.0",
+                    "method": "item.delete",
+                    "params": itemids,
+                    "auth": self.authID,
+                    "id": 2
+                })
+
+            res = self.user_login(data)
+            return res
+
+    def alters_status(self, time_from, time_till):
+             data = {
+            "jsonrpc": "2.0",
+            "method": "alert.get",
+            "params": {
+                "output": "extend",
+                "time_from": time_from,
+                "time_till": time_till
+            },
+             "auth": self.authID,
+             "id": 1
+             }
+             res =self.user_login()
+             return res
+      "auth": self.authID,
+                    "id": 2
+                })
+
+            res = self.user_login(data)
+            return res
+
+    def alters_status(self, time_from, time_till):
+             data = {
+            "jsonrpc": "2.0",
+            "method": "alert.get",
+            "params": {
+                "output": "extend",
+                "time_from": time_from,
+                "time_till": time_till
+            },
+             "auth": self.authID,
+             "id": 1
+             }
+             res =self.user_login()
+             return res
